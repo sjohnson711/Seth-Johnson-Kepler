@@ -1,2 +1,6 @@
+say_value = 100
+
 def say_functions():
-    say_functions = 100
+    print(say_value)
+
+say_functions()
