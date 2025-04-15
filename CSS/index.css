@@ -1,0 +1,11 @@
+*{
+    margin: auto;
+    align-items: left;
+}
+
+.teacher-image {
+    width: 600px;
+    height: 400px;
+    border-radius: 8px;
+    margin-left: auto;
+}
