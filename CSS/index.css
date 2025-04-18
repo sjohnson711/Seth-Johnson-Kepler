@@ -1,77 +1,83 @@
 /* Reset and base styles */
 * {
-    margin: 0;
-    padding: 0;
-   
-   
+  margin: 0;
+  padding: 0;
+}
+.header {
+  position: sticky;
+  top: 0;
+  padding: 10px 16px;
+  color: yellow;
+  font-size: 18px;
 }
 
-/* General page layout */
+ul {
+  display: flex;
+}
+
+#nav-links {
+  justify-content: center;
+  list-style: none;
+  justify-content: space-evenly;
+  font-family: "Times New Roman", Times, serif;
+}
+
 body {
-    padding: 20px;
-    font-family: 'Dancing Script', cursive;
-    background-color: rgb(23, 150, 100);
+  padding: 20px;
+  font-family: "Dancing Script", cursive;
+  background-color: rgb(23, 150, 100);
 }
 
-h1{
-    color: yellow;
-    
-    
+h1 {
+  color: yellow;
 }
 
-h1:hover{
-    color: blue;
+h1:hover {
+  color: blue;
 }
 
 /* Teacher image section */
 .teacher-image img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 8px;
-    display: flex;
-    margin: 20px auto;
-    align-items: center;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  display: flex;
+  margin: 20px auto;
+  align-items: center;
 }
-
 
 /* Bio section */
 .bio {
-    color: black;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 20px 0;
-    font-weight: bolder;
-    font-size: 25px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 0;
+  font-weight: bolder;
+  font-size: 25px;
 }
-
-
 
 /* Experience list styles */
 .experience {
-    font-weight: bold;
-    list-style-type: none;
-    padding-left: 20px;
-    font-size: 25px;
-    
+  font-weight: bold;
+  list-style-type: none;
+  padding-left: 20px;
+  font-size: 25px;
 }
 
-section#Experience  {
-    background-color: yellow;
+section#Experience {
+  background-color: yellow;
 }
-
-
-
 
 /* LinkedIn icon spacing */
 .linked-container ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
 }
 
 .linked-container a {
-    text-decoration: none;
+  text-decoration: none;
 }
