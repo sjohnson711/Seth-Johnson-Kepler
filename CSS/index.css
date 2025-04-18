@@ -11,15 +11,14 @@
   font-size: 18px;
 }
 
-ul {
-  display: flex;
-}
-
 #nav-links {
+  display: flex;
   justify-content: center;
   list-style: none;
   justify-content: space-evenly;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-top: 20px;
 }
 
 body {
