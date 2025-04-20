@@ -4,23 +4,30 @@
   padding: 0;
   box-sizing: border-box;
 }
-.header {
-  position: sticky;
-  top: 0;
+
+
+
+header {
+  position: fixed;
+  bottom: 10;
+  width: 100%;
   padding: 10px 16px;
   color: yellow;
   font-size: 18px;
+  background-color: transparent; /* added so it doesn't overlap invisibly */
+  z-index: 1000; /* ensures it stays on top */
+
 }
+
 
 #nav-links {
   display: flex;
-  justify-content: center;
   list-style: none;
   justify-content: space-evenly;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   margin-top: 20px;
- 
+  
   
 }
 a {
@@ -48,6 +55,7 @@ body {
   border-radius: 150px;
   width: 100px;
   box-shadow: 0 10px 20px cyan;
+  margin-top: 100px
 }
   
 
@@ -171,24 +179,21 @@ section#Experience {
   padding: 8px;
 }
 
-.clinical-mental-health-counseling {
+
+.connect-title {
   display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-  flex-wrap: wrap;
-  font-family:  'Roboto Mono', monospace;
-  border: dotted;
-  margin: 10px 10px 0 0;
-  text-align: center;
-  border-radius: 50px;
-  width: 600px;
-  height: 200px;
-  font-size: 20px;
-  background-color: cyan;
+  margin-top: 50px;
+  justify-content: center;
 }
 
 
 
+.linked-container{
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  background-color: 
+}
 
 
 
