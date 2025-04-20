@@ -20,7 +20,17 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   margin-top: 20px;
+  
 }
+a {
+  color:black;
+  background: linear-gradient(white, lightcyan)
+
+
+}
+
+  
+
 
 body {
   padding: 20px;
@@ -34,9 +44,7 @@ body {
   width: 100px;
 }
 
-h1 {
-  color: blue;
-}
+
 
 h1:hover {
   color: green;
@@ -63,6 +71,7 @@ h1:hover {
   padding: 20px 0;
   font-weight: bolder;
   font-size: 25px;
+  padding-top: 75px;
 }
 
 /* Experience list styles */
@@ -71,6 +80,10 @@ h1:hover {
   list-style-type: none;
   padding-left: 20px;
   font-size: 25px;
+  padding-top: 50px;
+  
+  
+  
 }
 
 section#Experience {
@@ -78,7 +91,7 @@ section#Experience {
   max-width: 100%;
   
 }
-
+  
 div .skills-projects {
   display: flex;
   flex-direction: column;
