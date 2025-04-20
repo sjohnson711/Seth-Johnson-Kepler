@@ -32,7 +32,8 @@ a {
 
 }
 
-  
+
+
 
 
 body {
@@ -99,7 +100,88 @@ section#Experience {
   max-width: 100%;
   
 }
+.Python {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: none;
+  flex-wrap: wrap;
+  font-family:  'Roboto Mono', monospace;
+  border: dotted;
+  margin: 10px 10px 0 0;
+  text-align: center;
+  border-radius: 50px;
+  width: 600px;
+  height: 200px;
+  font-size: 20px;
+  background-color: cyan;
+}
+.substance-abuse-counselor {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  font-family:  'Roboto Mono', monospace;
+  border: dotted;
+  margin: 10px 10px 0 0;
+  text-align: center;
+  border-radius: 50px;
+  width: 600px;
+  height: 200px;
+  font-size: 20px;
+  background-color: cyan;
+}
   
+.freecodecamp {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  font-family:  'Roboto Mono', monospace;
+  border: dotted;
+  margin: 10px 10px 0 0;
+  text-align: center;
+  border-radius: 50px;
+  width: 600px;
+  height: 200px;
+  font-size: 20px;
+  background-color: cyan;
+  padding: 8px;
+}
+
+.clinical-mental-health-counseling {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  font-family:  'Roboto Mono', monospace;
+  border: dotted;
+  margin: 10px 10px 0 0;
+  text-align: center;
+  border-radius: 50px;
+  width: 600px;
+  height: 200px;
+  font-size: 20px;
+  background-color: cyan;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .skills {
   display: flex;
   flex-direction: column;
@@ -132,3 +214,4 @@ section#Experience {
  
   
 }
+
