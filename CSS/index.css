@@ -100,6 +100,17 @@ section#Experience {
   max-width: 100%;
   
 }
+
+.experience-title-python {
+  font-style: italic;
+  color: blue;
+  
+}
+
+
+
+
+
 .Python {
   display: flex;
   flex-direction: column;
@@ -114,6 +125,12 @@ section#Experience {
   height: 200px;
   font-size: 20px;
   background-color: cyan;
+}
+
+.experience-title-substance-abuse-counselor{
+  font-style: italic;
+  color: blue;
+  
 }
 .substance-abuse-counselor {
   display: flex;
@@ -131,6 +148,12 @@ section#Experience {
   background-color: cyan;
 }
   
+.experience-title-freecodecamp{
+  font-style: italic;
+  color: blue;
+  
+}
+
 .freecodecamp {
   display: flex;
   flex-direction: column;
