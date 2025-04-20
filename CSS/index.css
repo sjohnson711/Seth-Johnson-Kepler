@@ -20,11 +20,14 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   margin-top: 20px;
+ 
   
 }
 a {
   color:black;
-  background: linear-gradient(white, lightcyan)
+  background: linear-gradient(white, lightcyan);
+  text-decoration: none;
+ 
 
 
 }
@@ -36,13 +39,17 @@ body {
   padding: 20px;
   font-family: "Dancing Script", cursive;
   background-color: lightcyan;
-  border:aqua solid;
+  border:aqua solid 20px;
 }
 
 #profile {
+  display: flex;
   border-radius: 150px;
   width: 100px;
+  box-shadow: 0 10px 20px cyan;
 }
+  
+
 
 
 
@@ -71,19 +78,20 @@ h1:hover {
   padding: 20px 0;
   font-weight: bolder;
   font-size: 25px;
-  padding-top: 75px;
+  padding-top: 45px;
+  ;
 }
 
 /* Experience list styles */
 .experience {
+  display: flex;
+  flex-direction: row;
   font-weight: bold;
   list-style-type: none;
   padding-left: 20px;
   font-size: 25px;
   padding-top: 50px;
-  
-  
-  
+  justify-content: space-evenly;
 }
 
 section#Experience {
@@ -92,14 +100,19 @@ section#Experience {
   
 }
   
-div .skills-projects {
+.skills {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   color: black;
-  padding: 0;
+  padding-top: 25px;
 
+}
+
+.Projects {
+  display: flex;
+  padding-top: 50px;
 }
 
 .linked-container ul {
@@ -113,4 +126,9 @@ div .skills-projects {
   text-decoration: none;
 }
 
-
+.footer img{
+  padding-top: 200px;
+  display: flex;
+ 
+  
+}
