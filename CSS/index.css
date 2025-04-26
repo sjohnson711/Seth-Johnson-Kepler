@@ -239,9 +239,32 @@ section#Experience {
   text-decoration: none;
 }
 
-.footer img{
-  padding-top: 200px;
+
+.footer {
   display: flex;
+  flex-flow: row-wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px
+  
+ 
+}
+
+.first-picture {
+  height: 400px;
+  width: 400px;
+}
+
+.second-picture {
+  height: 400px;
+  width: 400px;
+
+  
+ 
+ 
+  
+  
+ 
  
   
 }
