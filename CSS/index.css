@@ -101,10 +101,12 @@ h1:hover {
   font-size: 25px;
   padding-top: 50px;
   justify-content: space-evenly;
+  max-width: 100%;
+
 }
 
 section#Experience {
-  background: linear-gradient(cyan, white);
+ 
   max-width: 100%;
   
 }
@@ -133,17 +135,19 @@ section#Experience {
   height: 200px;
   font-size: 20px;
   background-color: cyan;
+  background: linear-gradient(cyan, white)
 }
 
 .experience-title-substance-abuse-counselor{
-  font-style: italic;
   color: blue;
-  
+  margin-bottom: 10px;
 }
+
+
 .substance-abuse-counselor {
   display: flex;
   flex-direction: column;
-  flex-shrink: 0;
+  flex-shrink: none;
   flex-wrap: wrap;
   font-family:  'Roboto Mono', monospace;
   border: dotted;
@@ -154,6 +158,8 @@ section#Experience {
   height: 200px;
   font-size: 20px;
   background-color: cyan;
+  background: linear-gradient(cyan, white);
+  
 }
   
 .experience-title-freecodecamp{
@@ -176,7 +182,8 @@ section#Experience {
   height: 200px;
   font-size: 20px;
   background-color: cyan;
-  padding: 8px;
+  padding: 10px;
+  justify-content: center;
 }
 
 
@@ -192,24 +199,8 @@ section#Experience {
 .linked-container{
   display: flex;
   margin-top: 50px;
-  justify-content: center;
-  background-color: 
+  justify-content: center; 
 }
-
-
-
-
-
-
-
-
-
-.two-picture {
-  
-}
-
-
-
 
 
 
@@ -242,7 +233,5 @@ section#Experience {
 .footer img{
   padding-top: 200px;
   display: flex;
- 
-  
 }
 
