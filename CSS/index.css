@@ -117,10 +117,6 @@ section#Experience {
   
 }
 
-
-
-
-
 .Python {
   display: flex;
   flex-direction: column;
@@ -220,12 +216,14 @@ section#Experience {
   padding-top: 50px;
 }
 
+
 .linked-container ul {
   list-style: none;
   display: flex;
   gap: 15px;
   padding: 0;
 }
+
 
 .linked-container a {
   text-decoration: none;
