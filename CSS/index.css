@@ -184,6 +184,7 @@ section#Experience {
   background-color: cyan;
   padding: 10px;
   justify-content: center;
+  background: linear-gradient(cyan, white);
 }
 
 
