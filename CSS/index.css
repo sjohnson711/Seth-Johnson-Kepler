@@ -26,7 +26,7 @@ body {
   padding: 20px;
   font-family: "Dancing Script", cursive;
   background-color: lightcyan;
-  border:aqua solid;
+  border: aqua solid 20px;
 }
 
 #profile {
@@ -51,7 +51,6 @@ h1:hover {
   display: flex;
   margin: 20px auto;
   padding: 0;
-  
 }
 
 /* Bio section */
@@ -76,17 +75,101 @@ h1:hover {
 section#Experience {
   background: linear-gradient(cyan, white);
   max-width: 100%;
-  
 }
 
-div .skills-projects {
+.experience-title-python {
+  font-style: italic;
+  color: blue;
+}
+
+.Python {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: none;
+  flex-wrap: wrap;
+  font-family: "Roboto Mono", monospace;
+  border: dotted;
+  margin: 10px 10px 0 0;
+  text-align: center;
+  border-radius: 50px;
+  width: 600px;
+  height: 200px;
+  font-size: 20px;
+  background-color: cyan;
+  background: linear-gradient(cyan, white);
+}
+
+.experience-title-substance-abuse-counselor {
+  color: blue;
+  margin-bottom: 10px;
+}
+
+.substance-abuse-counselor {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: none;
+  flex-wrap: wrap;
+  font-family: "Roboto Mono", monospace;
+  border: dotted;
+  margin: 10px 10px 0 0;
+  text-align: center;
+  border-radius: 50px;
+  width: 600px;
+  height: 200px;
+  font-size: 20px;
+  background-color: cyan;
+  background: linear-gradient(cyan, white);
+}
+
+.experience-title-freecodecamp {
+  font-style: italic;
+  color: blue;
+}
+
+.freecodecamp {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  font-family: "Roboto Mono", monospace;
+  border: dotted;
+  margin: 10px 10px 0 0;
+  text-align: center;
+  border-radius: 50px;
+  width: 600px;
+  height: 200px;
+  font-size: 20px;
+  background-color: cyan;
+  padding: 10px;
+  justify-content: center;
+  background: linear-gradient(cyan, white);
+}
+
+.connect-title {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  color: cyan;
+}
+
+.linked-container {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+.skills {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   color: black;
   padding: 0;
+}
 
+.Projects {
+  display: flex;
+  padding-top: 50px;
 }
 
 .linked-container ul {
@@ -99,5 +182,3 @@ div .skills-projects {
 .linked-container a {
   text-decoration: none;
 }
-
-
