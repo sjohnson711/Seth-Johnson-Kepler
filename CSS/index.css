@@ -4,39 +4,63 @@
   padding: 0;
   box-sizing: border-box;
 }
-.header {
-  position: sticky;
-  top: 0;
+
+
+
+header {
+  position: fixed;
+  bottom: 10;
+  width: 100%;
   padding: 10px 16px;
   color: yellow;
   font-size: 18px;
+  background-color: transparent; /* added so it doesn't overlap invisibly */
+  z-index: 1000; /* ensures it stays on top */
+
 }
+
 
 #nav-links {
   display: flex;
-  justify-content: center;
   list-style: none;
   justify-content: space-evenly;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   margin-top: 20px;
+  
+  
 }
+a {
+  color:black;
+  background: linear-gradient(white, lightcyan);
+  text-decoration: none;
+ 
+
+
+}
+
+
+
+
 
 body {
   padding: 20px;
   font-family: "Dancing Script", cursive;
   background-color: lightcyan;
-  border:aqua solid;
+  border:aqua solid 20px;
 }
 
 #profile {
+  display: flex;
   border-radius: 150px;
   width: 100px;
+  box-shadow: 0 10px 20px cyan;
+  margin-top: 100px
 }
+  
 
-h1 {
-  color: blue;
-}
+
+
 
 h1:hover {
   color: green;
@@ -63,31 +87,135 @@ h1:hover {
   padding: 20px 0;
   font-weight: bolder;
   font-size: 25px;
+  padding-top: 45px;
+  ;
 }
 
 /* Experience list styles */
 .experience {
+  display: flex;
+  flex-direction: row;
   font-weight: bold;
   list-style-type: none;
   padding-left: 20px;
   font-size: 25px;
+  padding-top: 50px;
+  justify-content: space-evenly;
+  max-width: 100%;
+
 }
 
 section#Experience {
-  background: linear-gradient(cyan, white);
+ 
   max-width: 100%;
   
 }
 
-div .skills-projects {
+.experience-title-python {
+  font-style: italic;
+  color: blue;
+  
+}
+
+.Python {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: none;
+  flex-wrap: wrap;
+  font-family:  'Roboto Mono', monospace;
+  border: dotted;
+  margin: 10px 10px 0 0;
+  text-align: center;
+  border-radius: 50px;
+  width: 600px;
+  height: 200px;
+  font-size: 20px;
+  background-color: cyan;
+  background: linear-gradient(cyan, white)
+}
+
+.experience-title-substance-abuse-counselor{
+  color: blue;
+  margin-bottom: 10px;
+}
+
+
+.substance-abuse-counselor {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: none;
+  flex-wrap: wrap;
+  font-family:  'Roboto Mono', monospace;
+  border: dotted;
+  margin: 10px 10px 0 0;
+  text-align: center;
+  border-radius: 50px;
+  width: 600px;
+  height: 200px;
+  font-size: 20px;
+  background-color: cyan;
+  background: linear-gradient(cyan, white);
+  
+}
+  
+.experience-title-freecodecamp{
+  font-style: italic;
+  color: blue;
+  
+}
+
+.freecodecamp {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  font-family:  'Roboto Mono', monospace;
+  border: dotted;
+  margin: 10px 10px 0 0;
+  text-align: center;
+  border-radius: 50px;
+  width: 600px;
+  height: 200px;
+  font-size: 20px;
+  background-color: cyan;
+  padding: 10px;
+  justify-content: center;
+  background: linear-gradient(cyan, white);
+}
+
+
+.connect-title {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  color: cyan
+}
+
+
+
+.linked-container{
+  display: flex;
+  margin-top: 50px;
+  justify-content: center; 
+}
+
+
+
+.skills {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   color: black;
-  padding: 0;
+  padding-top: 25px;
 
 }
+
+.Projects {
+  display: flex;
+  padding-top: 50px;
+}
+
 
 .linked-container ul {
   list-style: none;
@@ -96,8 +224,13 @@ div .skills-projects {
   padding: 0;
 }
 
+
 .linked-container a {
   text-decoration: none;
 }
 
+
+.footer {
+  display: flex;
+}
 
