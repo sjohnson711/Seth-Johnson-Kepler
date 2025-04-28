@@ -29,7 +29,7 @@ body {
   border: aqua solid 20px;
 }
 
-#profile {
+.profile {
   border-radius: 150px;
   width: 100px;
 }
@@ -142,7 +142,6 @@ section#Experience {
   background-color: cyan;
   padding: 10px;
   justify-content: center;
-  background: linear-gradient(cyan, white);
 }
 
 .connect-title {
