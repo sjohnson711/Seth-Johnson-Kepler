@@ -180,4 +180,11 @@ h1:hover {
   display: flex;
 }
 
-@media (max-width: 768px);
+@media (max-width: 768px) {
+  .experience {
+    display: flex;
+    flex-direction: column;
+    color: purple;
+    font-weight: bold
+  }
+}
