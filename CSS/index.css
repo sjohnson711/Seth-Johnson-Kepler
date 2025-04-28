@@ -4,22 +4,30 @@
   padding: 0;
   box-sizing: border-box;
 }
-.header {
-  position: sticky;
-  top: 0;
+
+header {
+  position: fixed;
+  bottom: 10;
+  width: 100%;
   padding: 10px 16px;
   color: yellow;
   font-size: 18px;
+  background-color: transparent; /* added so it doesn't overlap invisibly */
+  z-index: 1000; /* ensures it stays on top */
 }
 
 #nav-links {
   display: flex;
-  justify-content: center;
   list-style: none;
   justify-content: space-evenly;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   margin-top: 20px;
+}
+a {
+  color: black;
+  background: linear-gradient(white, lightcyan);
+  text-decoration: none;
 }
 
 body {
@@ -29,13 +37,12 @@ body {
   border: aqua solid 20px;
 }
 
-.profile {
+#profile {
+  display: flex;
   border-radius: 150px;
   width: 100px;
-}
-
-h1 {
-  color: blue;
+  box-shadow: 0 10px 20px cyan;
+  margin-top: 100px;
 }
 
 h1:hover {
@@ -62,14 +69,15 @@ h1:hover {
   padding: 20px 0;
   font-weight: bolder;
   font-size: 25px;
+  padding-top: 45px;
 }
 
 /* Experience list styles */
 .experience {
-  font-weight: bold;
+  display: grid;
   list-style-type: none;
-  padding-left: 20px;
-  font-size: 25px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 section#Experience {
@@ -96,18 +104,16 @@ section#Experience {
   height: 200px;
   font-size: 20px;
   background-color: cyan;
-  background: linear-gradient(cyan, white);
 }
 
 .experience-title-substance-abuse-counselor {
+  font-style: italic;
   color: blue;
-  margin-bottom: 10px;
 }
-
 .substance-abuse-counselor {
   display: flex;
   flex-direction: column;
-  flex-shrink: none;
+  flex-shrink: 0;
   flex-wrap: wrap;
   font-family: "Roboto Mono", monospace;
   border: dotted;
@@ -118,7 +124,6 @@ section#Experience {
   height: 200px;
   font-size: 20px;
   background-color: cyan;
-  background: linear-gradient(cyan, white);
 }
 
 .experience-title-freecodecamp {
@@ -140,8 +145,7 @@ section#Experience {
   height: 200px;
   font-size: 20px;
   background-color: cyan;
-  padding: 10px;
-  justify-content: center;
+  padding: 8px;
 }
 
 .connect-title {
@@ -155,6 +159,7 @@ section#Experience {
   display: flex;
   margin-top: 50px;
   justify-content: center;
+  background-color: ;
 }
 
 .skills {
@@ -163,7 +168,7 @@ section#Experience {
   justify-content: space-around;
   align-items: center;
   color: black;
-  padding: 0;
+  padding-top: 25px;
 }
 
 .Projects {
@@ -181,3 +186,10 @@ section#Experience {
 .linked-container a {
   text-decoration: none;
 }
+
+.footer img {
+  padding-top: 200px;
+  display: flex;
+}
+
+@media (max-width: 768px);
