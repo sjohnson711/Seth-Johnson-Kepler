@@ -49,17 +49,6 @@ h1:hover {
   color: green;
 }
 
-/* Teacher image section */
-.teacher-image img {
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  border-radius: 8px;
-  display: flex;
-  margin: 20px auto;
-  padding: 0;
-}
-
 /* Bio section */
 .bio {
   color: black;
@@ -76,13 +65,12 @@ h1:hover {
 .experience {
   display: grid;
   list-style-type: none;
+  grid-auto-rows: 50px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-}
-
-section#Experience {
-  background: linear-gradient(cyan, white);
-  max-width: 100%;
+  grid-template-areas:
+    "Python substance-abuse counselor"
+    "freecodecamp freecodecamp";
 }
 
 .experience-title-python {
