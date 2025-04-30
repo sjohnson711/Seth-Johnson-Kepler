@@ -62,15 +62,39 @@ h1:hover {
 }
 
 /* Experience list styles */
-.experience {
+/* .experience {
   display: grid;
   list-style-type: none;
   grid-auto-rows: 50px;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
   grid-template-areas:
     "Python substance-abuse counselor"
     "freecodecamp freecodecamp";
+} */
+
+.experience {
+  display: grid;
+  list-style-type: none;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "python counselor"
+    "freecodecamp freecodecamp";
+}
+
+/* Python Card */
+.python {
+  grid-area: python;
+}
+
+.counselor {
+  grid-area: counselor;
+}
+
+.freecodecamp {
+  grid-area: freecodecamp;
+  justify-self: center; /* center freecodecamp*/
 }
 
 .experience-title-python {
@@ -97,6 +121,7 @@ h1:hover {
 .experience-title-substance-abuse-counselor {
   font-style: italic;
   color: blue;
+  margin-top: 10px;
 }
 .substance-abuse-counselor {
   display: flex;
@@ -147,7 +172,6 @@ h1:hover {
   display: flex;
   margin-top: 50px;
   justify-content: center;
-  background-color: ;
 }
 
 .skills {
@@ -185,16 +209,15 @@ h1:hover {
     display: flex;
     flex-direction: column;
     color: purple;
-    font-weight: bold
+    font-weight: bold;
   }
 }
 /*mobile media query*/
-@media(max-width: 768px) {
+@media (max-width: 768px) {
   .links {
     color: blue;
-    
   }
   .experience {
-    color: red
+    color: red;
   }
 }
