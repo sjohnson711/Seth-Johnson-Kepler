@@ -66,6 +66,7 @@ h1:hover {
 .experience {
   display: grid;
   list-style-type: none;
+  justify-items: center;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto;
   grid-template-areas:
