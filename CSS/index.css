@@ -62,23 +62,12 @@ h1:hover {
 }
 
 /* Experience list styles */
-/* .experience {
-  display: grid;
-  list-style-type: none;
-  grid-auto-rows: 50px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto;
-  grid-template-areas:
-    "Python substance-abuse counselor"
-    "freecodecamp freecodecamp";
-} */
 
 .experience {
   display: grid;
   list-style-type: none;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto;
-  grid-row-gap: 10px;
   grid-template-areas:
     "python counselor"
     "freecodecamp freecodecamp";
