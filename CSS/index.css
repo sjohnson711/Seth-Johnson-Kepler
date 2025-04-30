@@ -191,9 +191,16 @@ h1:hover {
   text-decoration: none;
 }
 
+footer {
+  display: grid;
+  justify-content: center;
+  
+}
+
 .footer img {
-  padding-top: 200px;
-  display: flex;
+  
+  
+  
 }
 /*Desktop-first media query*/
 @media (max-width: 1024px) {
