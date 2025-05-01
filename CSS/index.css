@@ -61,7 +61,6 @@ h1:hover {
   padding-top: 45px;
 }
 
-
 /* Experience list styles */
 
 .experience {
@@ -194,18 +193,13 @@ h1:hover {
 footer {
   display: grid;
   justify-content: center;
-  
 }
 
-.footer img {
+img .second-picture {
   height: 50vh;
   width: 100%;
   border: solid;
   border-color: aqua;
-  
-  
-  
-  
 }
 /*Desktop-first media query*/
 @media (max-width: 1024px) {
