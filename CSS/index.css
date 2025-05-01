@@ -191,11 +191,11 @@ h1:hover {
 }
 
 footer {
-  display: grid;
+  display: flex;
   justify-content: center;
 }
 
-img .second-picture {
+.second-picture {
   height: 50vh;
   width: 100%;
   border: solid;
