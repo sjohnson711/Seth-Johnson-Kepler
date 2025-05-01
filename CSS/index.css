@@ -61,11 +61,13 @@ h1:hover {
   padding-top: 45px;
 }
 
+
 /* Experience list styles */
 
 .experience {
   display: grid;
   list-style-type: none;
+  justify-items: center;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto auto auto;
   grid-template-areas:
@@ -189,9 +191,21 @@ h1:hover {
   text-decoration: none;
 }
 
+footer {
+  display: grid;
+  justify-content: center;
+  
+}
+
 .footer img {
-  padding-top: 200px;
-  display: flex;
+  height: 50vh;
+  width: 100%;
+  border: solid;
+  border-color: aqua;
+  
+  
+  
+  
 }
 /*Desktop-first media query*/
 @media (max-width: 1024px) {
