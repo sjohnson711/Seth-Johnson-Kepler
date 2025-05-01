@@ -198,6 +198,11 @@ footer {
 }
 
 .footer img {
+  height: 50vh;
+  width: 100%;
+  border: solid;
+  border-color: aqua;
+  
   
   
   
