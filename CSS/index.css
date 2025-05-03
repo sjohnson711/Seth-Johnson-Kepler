@@ -190,16 +190,22 @@ h1:hover {
   text-decoration: none;
 }
 
-footer {
+container-footer-container {
   display: flex;
-  justify-content: center;
 }
 
 .second-picture {
   height: 200px;
-  width: 100%;
+  width: 50%;
   border: solid;
   border-color: aqua;
+  justify-content: flex-start;
+}
+
+#copyright {
+  display: flex;
+  justify-content: flex-end;
+  color: red;
 }
 /*Desktop-first media query*/
 @media (max-width: 1024px) {
@@ -218,4 +224,6 @@ footer {
   .experience {
     color: red;
   }
+  .second-picture {
+    justify-content: center;
 }
