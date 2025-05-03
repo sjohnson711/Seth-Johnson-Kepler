@@ -243,6 +243,7 @@ container-footer-container {
     display: grid;
     grid-template-rows: 1fr 200px 200px;
     justify-content: center;
-    background: linear-gradient(orange, #5390D9);
+    background: linear-gradient(orange, #5390d9);
     font-family: cursive;
+  }
 }
