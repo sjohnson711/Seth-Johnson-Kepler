@@ -25,3 +25,19 @@ for (let i = 0; i < skills.length; i++) {
   skill.innerText = skills[i]; // for ever skill there will be a li
   skillsList.appendChild(skill); //make child to the ul created earlier
 }
+
+
+let messageForm = document.getElementsByName('leave_message')[0];
+messageForm.addEventListener('submit', (event)=>{
+  event.preventDefault()
+  let usersName = event.target.usersName.value
+  let usersEmail = event.target.usersEmail.value
+  let messageField = event.target.usersMessage.value
+
+  console.log('Name', usersName);
+  console.log('Email', usersEmail);
+  console.log('Message', messageField)
+
+  messageForm.reset()
+}
+)

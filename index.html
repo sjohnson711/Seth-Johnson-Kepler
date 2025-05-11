@@ -37,6 +37,7 @@
             <li><a href="#Connect">Connect</a></li>
             <li><a href="#Skills">Skills</a></li>
             <li><a href="#Projects">Projects</a></li>
+            <li><a href="#usersMessage">Message</a></li>
           </ul>
         </nav>
         </div>
@@ -147,14 +148,28 @@
   <section>
     <h2>Leave a Message</h2>
     <form name="leave_message">
-      <input type="text" name="usersName" required="true">
-      <input type="email" name="usersEmail" required="true" >
+      <label for="usersName">Name:</label>
+      <input type="text" name="usersName" required="true"><br>
+
+      <label for="usersEmail">Email:</label>
+      <input type="email" name="usersEmail" required="true" ><br>
+
+     
+      <textarea name="usersMessage" id="usersMessage" required="true" class="usersMessage"></textarea><br>
+      <button type="submit">Submit</button>
+
     </form>
+  </section>
+  <section id="messages">
+    <h2>Messages</h2>
+    <ul>
+
+    </ul>
   </section>
   <div class="container-footer-container">
     <footer class="footer">
         <img class="second-picture" src="https://cdn.pixabay.com/photo/2016/02/07/20/38/computer-1185569_640.jpg" alt="black man on the computer">
-      </section>
+    
     </footer>
   </div>
     <script src="JS/index.js"></script>
