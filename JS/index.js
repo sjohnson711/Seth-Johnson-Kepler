@@ -26,18 +26,18 @@ for (let i = 0; i < skills.length; i++) {
   skillsList.appendChild(skill); //make child to the ul created earlier
 }
 
+let messageForm = document.getElementsByName("leave_message")[0];
+messageForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  let usersName = event.target.usersName.value;
+  let usersEmail = event.target.usersEmail.value;
+  let messageField = event.target.usersMessage.value;
 
-let messageForm = document.getElementsByName('leave_message')[0];
-messageForm.addEventListener('submit', (event)=>{
-  event.preventDefault()
-  let usersName = event.target.usersName.value
-  let usersEmail = event.target.usersEmail.value
-  let messageField = event.target.usersMessage.value
+  console.log("Name", usersName);
+  console.log("Email", usersEmail);
+  console.log("Message", messageField);
 
-  console.log('Name', usersName);
-  console.log('Email', usersEmail);
-  console.log('Message', messageField)
-
-  messageForm.reset()
-}
-)
+  let messageSection = document.getElementById("messages");
+  let messageList = document.querySelector("ul");
+  messageForm.reset();
+});
