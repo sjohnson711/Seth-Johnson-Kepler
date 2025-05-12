@@ -20,8 +20,8 @@ header {
   display: flex;
   list-style: none;
   justify-content: space-evenly;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Dancing Script", cursive;
+  font-size: 28px;
   margin-top: 20px;
 }
 a {
@@ -98,14 +98,14 @@ h1:hover {
   flex-direction: column;
   flex-shrink: none;
   flex-wrap: wrap;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Dancing Script", cursive;
   border: dotted;
   margin: 10px 10px 0 0;
   text-align: center;
   border-radius: 50px;
   width: 600px;
   height: 200px;
-  font-size: 20px;
+  font-size: 24px;
   background-color: cyan;
 }
 
@@ -119,14 +119,14 @@ h1:hover {
   flex-direction: column;
   flex-shrink: 0;
   flex-wrap: wrap;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Dancing Script", cursive;
   border: dotted;
   margin: 10px 10px 0 0;
   text-align: center;
   border-radius: 50px;
   width: 600px;
   height: 200px;
-  font-size: 20px;
+  font-size: 24px;
   background-color: cyan;
 }
 
@@ -140,14 +140,14 @@ h1:hover {
   flex-direction: column;
   flex-shrink: 0;
   flex-wrap: wrap;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Dancing Script", cursive;
   border: dotted;
   margin: 10px 10px 0 0;
   text-align: center;
   border-radius: 50px;
   width: 600px;
   height: 200px;
-  font-size: 20px;
+  font-size: 24px;
   background-color: cyan;
   padding: 8px;
 }
@@ -251,8 +251,8 @@ textarea {
 button[type="submit"] {
   padding: 10px;
   font-size: 16px;
-  background-color: #4caf50;
-  color: white;
+  background-color: aqua;
+  color: black;
   border: none;
   border-radius: 5px;
   cursor: pointer;
