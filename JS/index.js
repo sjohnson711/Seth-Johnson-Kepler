@@ -54,6 +54,6 @@ messageForm.addEventListener("submit", (event) => {
   newMessage.appendChild(removeButton);
   messageList.appendChild(newMessage);
 
-  messageSection.style.display = "block";
+  // messageSection.style.display = "block";
   messageForm.reset();
 });
