@@ -29,10 +29,11 @@ for (let i = 0; i < skills.length; i++) {
 let messageForm = document.getElementsByName("leave_message")[0];
 messageForm.addEventListener("submit", (event) => {
   event.preventDefault();
-  let usersName = event.target.usersName.value;
-  let usersEmail = event.target.usersEmail.value;
-  let messageField = event.target.usersMessage.value;
+  let usersName = event.target.usersName.value; // this links to the Name section of the form
+  let usersEmail = event.target.usersEmail.value; //this links to the email section of the form
+  let messageField = event.target.usersMessage.value; //in text area element
 
+  //LOGS INFORMATION TO THE CONSOLE
   console.log("Name", usersName);
   console.log("Email", usersEmail);
   console.log("Message", messageField);
