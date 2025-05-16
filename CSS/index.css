@@ -21,13 +21,15 @@ header {
   list-style: none;
   justify-content: space-evenly;
   font-family: "Dancing Script", cursive;
-  font-size: 28px;
+  font-size: 23px;
   margin-top: 20px;
 }
 a {
   color: black;
   background: linear-gradient(white, lightcyan);
   text-decoration: none;
+  border-radius: 80px;
+  padding: 10px;
 }
 
 body {
@@ -35,14 +37,20 @@ body {
   font-family: "Dancing Script", cursive;
   background-color: lightcyan;
   border: aqua solid 20px;
+  background-color: black;
+  color: white;
 }
 
+h1 {
+  margin-left: 48%;
+}
 #profile {
   display: flex;
-  border-radius: 150px;
+  border-radius: 200px;
   width: 100px;
   box-shadow: 0 10px 20px cyan;
   margin-top: 100px;
+  margin-left: 50%;
 }
 
 h1:hover {
@@ -51,7 +59,7 @@ h1:hover {
 
 /* Bio section */
 .bio {
-  color: black;
+  color: white;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -218,7 +226,7 @@ h1:hover {
 #copyright {
   display: flex;
   justify-content: flex-end;
-  color: black;
+  color: white;
 }
 
 /* Style the message form */
@@ -256,6 +264,7 @@ button[type="submit"] {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: all 200ms ease-in-out;
 }
 
 button[type="submit"]:hover {
