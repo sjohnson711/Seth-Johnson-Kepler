@@ -1,18 +1,18 @@
 const newDate = new Date();
-const thisYear = newDate.getFullYear();
+const thisYear = newDate.getFullYear(); //get current year
 
 //access the footer by class
 const footer = document.querySelector(".footer");
 
 //create a new paragraph for the copyright
-const copyright = document.createElement("p");
-copyright.setAttribute("id", "copyright");
-copyright.innerText = "\u00A9 Seth Johnson " + thisYear;
+const copyright = document.createElement("p"); //Seth Johnson
+copyright.setAttribute("id", "copyright"); //setting <p id="copyright"></p>
+copyright.innerText = "\u00A9 Seth Johnson " + thisYear; //<p id="copyright">Seth Johnson 2025</p>
 
 //append the copyright item to the footer
 footer.appendChild(copyright);
 
-copyright.style.fontFamily = "Times New Roman";
+copyright.style.fontFamily = "Times New Roman"; //copyright text font
 
 const skills = ["Github", "HTML", "CSS", "Python"]; //array of skills
 const skillsection = document.getElementById("skills"); //find the element ul created
