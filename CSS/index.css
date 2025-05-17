@@ -35,7 +35,6 @@ a {
 body {
   padding: 20px;
   font-family: "Dancing Script", cursive;
-  background-color: lightcyan;
 
   background-color: black;
   color: white;
@@ -335,6 +334,12 @@ button[type="button"]:hover {
     color: purple;
     font-weight: bold;
   }
+  body {
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif, cursive;
+  background-color: gray;
+  color: black;
+}
 }
 /*mobile media query*/
 @media (max-width: 768px) {
