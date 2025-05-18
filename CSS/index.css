@@ -203,10 +203,36 @@ h1:hover {
   padding-top: 25px;
 }
 
-.Projects {
+.projects {
   display: flex;
   padding-top: 50px;
+  justify-content: center;
+   width: 500px;
+   height: 400px;
+  
 }
+
+#projects-title {
+  display: flex;
+  justify-content: left;
+  margin-top:20px;
+  font-size: 40px
+
+}
+
+
+#CTD-PORTFOLIO {
+  font-size: 25px;
+  /* background-image: image('http://127.0.0.1:5500/index.html'); */
+  list-style: none;
+  border: solid;
+  border-color:gray;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 10px;
+  padding: 10px;
+  
+}
+
 
 .linked-container ul {
   list-style: none;

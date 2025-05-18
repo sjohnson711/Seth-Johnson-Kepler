@@ -63,23 +63,31 @@ messageForm.addEventListener("submit", (event) => {
 
   const GITHUB_USERNAME = 'sjohnson711';
   const url = `https://api.github.com/users/${GITHUB_USERNAME}/repos`
+let repositories; //created variable repositories on the global scope to be used else where after the .then response
  fetch(url)
     .then(response => response.json())
     .then(data =>{   
-     let repositories = data;  //creating varible to store my data
-      console.log(repositories)
+     repositories = data;  //creating varible to store my data
+    console.log(repositories);
+
+  let projectSection = document.getElementById('projects');  //getting access to the projects element in HTML
+  let projectList = projectSection.getElementsByTagName('ul')[0]; //under projects access the FIRST 'ul'
+
+
+  for(let i = 0; i < repositories.length; i++){ //looping through the repositories
+  let project = document.createElement('li'); //creating 'li' to be appended to the 'ul'
+  project.setAttribute('id', 'CTD-PORTFOLIO') //creating id to use in CSS
+  
+  project.innerText = repositories[i].name; //WHAT INFORMATION FOR THE API I WANT TO DISPLAY ON THE WEBPAGE IF THEY ARE PUBLIC REPOSITORIES
+  projectList.appendChild(project); //under the 'ul' ====> appending the list of repositories.
+  }
 
     })
-    .catch(error=>console.error(error))
+    .catch(error=>console.error(error)) //catch any errors in the browser console
 
 //challenged at the time
-const projectSection = document.getElementById('projects');
-const projectList = projectSection.getElementsByTagName('ul')[0]
-for(let i = 0; i < repositories.length; i++){
-  let project = document.createElement('li');
-  project.innerText = repositories[i].name;
-  projectSection.appendChild(projectList)
-}
+
+
 
 
 
