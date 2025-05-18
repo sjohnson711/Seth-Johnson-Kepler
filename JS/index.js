@@ -72,7 +72,7 @@ messageForm.addEventListener("submit", (event) => {
     })
     .catch(error=>console.error(error))
 
-//challenged
+//challenged at the time
 const projectSection = document.getElementById('projects');
 const projectList = projectSection.getElementsByTagName('ul')[0]
 for(let i = 0; i < repositories.length; i++){
