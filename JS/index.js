@@ -66,7 +66,7 @@ messageForm.addEventListener("submit", (event) => {
  fetch(url)
     .then(response => response.json())
     .then(data =>{   
-      repositories = data;  //creating varible to store my data
+     let repositories = data;  //creating varible to store my data
       console.log(repositories)
 
     })
@@ -74,11 +74,11 @@ messageForm.addEventListener("submit", (event) => {
 
 
 const projectSection = document.getElementById('projects');
-const projectList = document.querySelector('projectSection');
-for(let i = 0; i < respositories.length; i++){
+const projectList = projectSection.getElementsByTagName('ul')[0]
+for(let i = 0; i < repositories.length; i++){
   let project = document.createElement('li');
-  project.innerText = repositories[i];
-  project.appendChild(projectList)
+  project.innerText = repositories[i].name;
+  projectSection.appendChild(projectList)
 }
 
 

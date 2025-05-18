@@ -7,7 +7,7 @@
 
 header {
   position: fixed;
-  bottom: 10;
+  top: 10px;
   width: 100%;
   padding: 10px 16px;
   color: yellow;
@@ -339,7 +339,7 @@ button[type="button"]:hover {
   background-color: gray;
   color: black;
   }
-  
+  /* just adding a note */
   #bio{
     color: black
   }
