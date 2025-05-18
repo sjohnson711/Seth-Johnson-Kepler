@@ -58,3 +58,29 @@ messageForm.addEventListener("submit", (event) => {
   // messageSection.style.display = "block";
   messageForm.reset();
 });
+
+//creating fetch repos from my GitHub
+
+  const GITHUB_USERNAME = 'sjohnson711';
+  const url = `https://api.github.com/users/${GITHUB_USERNAME}/repos`
+ fetch(url)
+    .then(response => response.json())
+    .then(data =>{   
+      repositories = data;  //creating varible to store my data
+      console.log(repositories)
+
+    })
+    .catch(error=>console.error(error))
+
+
+const projectSection = document.getElementById('projects');
+const projectList = document.querySelector('projectSection');
+for(let i = 0; i < respositories.length; i++){
+  let project = document.createElement('li');
+  project.innerText = repositories[i];
+  project.appendChild(projectList)
+}
+
+
+
+

@@ -338,12 +338,16 @@ button[type="button"]:hover {
   font-family: 'Times New Roman', Times, serif, cursive;
   background-color: gray;
   color: black;
-
+  }
+  
+  #bio{
+    color: black
+  }
 
 }
 
 
-}
+
 /*mobile media query*/
 @media (max-width: 768px) {
   .links {
