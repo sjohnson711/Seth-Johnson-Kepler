@@ -35,7 +35,6 @@ a {
 body {
   padding: 20px;
   font-family: "Dancing Script", cursive;
-
   background-color: black;
   color: white;
 }
@@ -331,7 +330,7 @@ button[type="button"]:hover {
   .experience {
     display: flex;
     flex-direction: column;
-    color: purple;
+    color: black;
     font-weight: bold;
   }
   body {
@@ -339,7 +338,11 @@ button[type="button"]:hover {
   font-family: 'Times New Roman', Times, serif, cursive;
   background-color: gray;
   color: black;
+
+
 }
+
+
 }
 /*mobile media query*/
 @media (max-width: 768px) {
