@@ -380,7 +380,9 @@ button[type="button"]:hover {
     color: blue;
   }
   .experience {
-    color: red;
+    color: black;
+    text-decoration: underline;
+    
   }
   .second-picture {
     justify-content: center;
